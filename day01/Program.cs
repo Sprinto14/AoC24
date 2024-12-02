@@ -6,7 +6,7 @@ namespace Day01
 
     class Solution 
     {
-        static List<List<int>> ParseAndSortLists(string filePath)
+        static List<List<int>> ParseLists(string filePath)
         {
             List<List<int>> numsLists = [];
 
@@ -45,7 +45,7 @@ namespace Day01
 
         static int Part1(string filePath)
         {
-            List<List<int>> numsLists = ParseAndSortLists(filePath);
+            List<List<int>> numsLists = ParseLists(filePath);
 
             // Now we have our input, we can actually solve the puzzle
 
@@ -67,7 +67,7 @@ namespace Day01
 
         static int Part2(string filePath)
         {
-            List<List<int>> numsLists = ParseAndSortLists(filePath);
+            List<List<int>> numsLists = ParseLists(filePath);
 
             // Count how many of each number appears in each list
             List<Dictionary<int, int>> numCounts = [];
